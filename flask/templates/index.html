@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GO GO GO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div>
+            {% block content %}
+                <iframe
+                    width="600"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDS8EO2kPJRyO53obnUXT7UjS4GjcX8dI0
+                    &origin=5032 Forbes Ave, Pittsburgh, PA 15213, United States
+                    &destination=1 Allegheny Ave, Pittsburgh, PA 15212, United States
+                    &waypoints={{ waypoints }}"
+                    >
+                </iframe>
+
+                <form method="POST">
+                    <p>What do you want to do?<input type="text" name="query" /></p>
+                </form>
+
+                <ul>
+                    {% for name in names %}
+                        <li>{{ name }}</li>
+                    {% endfor %}
+                </ul>
+            {% endblock %}
+        </div>
+        <script src="google.js" async defer></script>
+    </body>
+</html>
