@@ -1,6 +1,6 @@
 import googlemaps
 
-gmaps = googlemaps.Client(key='AIzaSyDS8EO2kPJRyO53obnUXT7UjS4GjcX8dI0')
+gmaps = googlemaps.Client(key='API_KEY')
 
 waypoints = ["500 Sampsonia Way, Pittsburgh, PA 15212, United States",
 "4400 Forbes Ave, Pittsburgh, PA 15213, United States"]
