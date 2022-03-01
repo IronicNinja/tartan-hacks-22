@@ -17,4 +17,4 @@ def main():
         namesList = attractionList['namesList']
     optimizedRoute = optimizeWaypoints(addressList, origin, destination)
     print(namesList)
-    return render_template('index.html', waypoints=optimizedRoute, names=namesList)
+    return render_template('home.html', waypoints=optimizedRoute, names=namesList)

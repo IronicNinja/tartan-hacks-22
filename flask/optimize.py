@@ -1,6 +1,6 @@
 import googlemaps
 
-gmaps = googlemaps.Client(key='AIzaSyDS8EO2kPJRyO53obnUXT7UjS4GjcX8dI0')
+gmaps = googlemaps.Client(key='API_KEY')
 
 def optimizeWaypoints(waypointsList, origin, destination):
     waypointsString = "|".join(waypointsList)

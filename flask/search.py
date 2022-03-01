@@ -2,7 +2,7 @@ import requests
 
 def searchAttractions(query):
     r = requests.get(f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={query}" +
-                        "&key=AIzaSyDS8EO2kPJRyO53obnUXT7UjS4GjcX8dI0")
+                        "&key=API_KEY")
 
     x = r.json()
     y = x['results']
